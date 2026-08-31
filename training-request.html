@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request Training | Ironhouse Hoops</title>
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="apple-touch-icon" href="images/favicon-180.png">
+<link rel="stylesheet" href="css/style.css?v=5">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <img src="images/logo.png" alt="Ironhouse Hoops" class="brand-logo">
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="schedule.html" class="active">Upcoming Events</a></li>
+      <li><a href="about.html">About/Team</a></li>
+      <li><a href="index.html#tryouts">Tryouts</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="registration.html" class="cta">Register</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" style="padding: 60px 20px;">
+  <div class="container">
+    <h1>Request a Training Session</h1>
+    <p>Fill out the form below and we'll follow up to confirm your day and time.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <!-- Uses Formspree — see registration.html for setup steps. -->
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+      <div class="form-row two-col">
+        <div>
+          <label for="t-player-name">Player Name</label>
+          <input type="text" id="t-player-name" name="player_name" required>
+        </div>
+        <div>
+          <label for="t-parent-name">Parent/Guardian Name</label>
+          <input type="text" id="t-parent-name" name="parent_name" required>
+        </div>
+      </div>
+
+      <div class="form-row two-col">
+        <div>
+          <label for="t-trainer">Preferred Trainer</label>
+          <select id="t-trainer" name="preferred_trainer" required>
+            <option value="">Select one&hellip;</option>
+            <option value="no-preference">No Preference</option>
+            <option value="trainer-1">[Trainer Name 1]</option>
+            <option value="trainer-2">[Trainer Name 2]</option>
+          </select>
+        </div>
+        <div>
+          <label for="t-position">Position</label>
+          <select id="t-position" name="position" required>
+            <option value="">Select one&hellip;</option>
+            <option>Guard</option>
+            <option>Forward</option>
+            <option>Center</option>
+            <option>Multiple / Not Sure</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row two-col">
+        <div>
+          <label for="t-skill-level">Skill Level</label>
+          <select id="t-skill-level" name="skill_level" required>
+            <option value="">Select one&hellip;</option>
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+          </select>
+        </div>
+        <div>
+          <label for="t-contact">Email or Phone</label>
+          <input type="text" id="t-contact" name="contact_info" required>
+        </div>
+      </div>
+
+      <div class="form-row two-col">
+        <div>
+          <label for="t-date">Preferred Date</label>
+          <input type="date" id="t-date" name="preferred_date" required>
+        </div>
+        <div>
+          <label for="t-time">Preferred Time</label>
+          <input type="time" id="t-time" name="preferred_time" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label for="t-notes">Additional Notes</label>
+        <textarea id="t-notes" name="notes" placeholder="Anything else we should know?"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary" style="width:100%;">Request Training Session</button>
+      <p class="form-note">This is a request, not a confirmed booking &mdash; the Ironhouse Hoops team will follow up to lock in your session.</p>
+    </form>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="images/logo.png" alt="Ironhouse Hoops" class="footer-logo">
+      <h3 class="footer-heading">Connect With Us</h3>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/ironhousehoops/" title="Instagram" target="_blank" rel="noopener">IG</a>
+        <a href="#" title="Facebook">FB</a>
+        <a href="#" title="X / Twitter">X</a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h3 class="footer-heading">Information</h3>
+      <div class="footer-links-cols">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="schedule.html">Upcoming Events</a></li>
+          <li><a href="about.html">About/Team</a></li>
+          <li><a href="index.html#tryouts">Tryouts</a></li>
+        </ul>
+        <ul>
+          <li><a href="registration.html?program=october-camp">Skills Camp</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="registration.html">Register</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-join">
+      <h3 class="footer-heading">Join Ironhouse Hoops</h3>
+      <p>If you're interested in joining as a player, coach, or sponsor, we'd love to hear from you.</p>
+      <a href="contact.html" class="btn-pill">Contact Us</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p><strong>Ironhouse Hoops</strong> &mdash; Minneapolis, Minnesota &nbsp;|&nbsp; [phone number] &nbsp;|&nbsp; info@ironhousehoops.com</p>
+    <p>&copy; <span id="year"></span> Ironhouse Hoops. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/main.js?v=5"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const trainer = params.get("trainer");
+  if (trainer) {
+    const select = document.getElementById("t-trainer");
+    if (select && select.querySelector('option[value="' + trainer + '"]')) {
+      select.value = trainer;
+    }
+  }
+</script>
+</body>
+</html>

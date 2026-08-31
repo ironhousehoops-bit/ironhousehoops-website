@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration | Ironhouse Hoops</title>
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="apple-touch-icon" href="images/favicon-180.png">
+<link rel="stylesheet" href="css/style.css?v=5">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <img src="images/logo.png" alt="Ironhouse Hoops" class="brand-logo">
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="schedule.html">Upcoming Events</a></li>
+      <li><a href="about.html">About/Team</a></li>
+      <li><a href="index.html#tryouts">Tryouts</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="registration.html" class="cta active">Register</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" style="padding: 60px 20px;">
+  <div class="container">
+    <h1>Player Registration</h1>
+    <p>Fill out the form below to register for a tryout, the Skills Camp, or 1-on-1 training. We'll follow up by email with next steps.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <!--
+      HOW THIS FORM WORKS (no website backend needed):
+      This form uses Formspree (formspree.io), a free service that emails you
+      the form contents whenever someone submits.
+
+      To connect it to YOUR email:
+      1. Go to https://formspree.io and create a free account.
+      2. Create a new form and copy the endpoint URL it gives you
+         (looks like https://formspree.io/f/xxxxxxxx).
+      3. Replace "YOUR_FORM_ID" in the action="" attribute below with that ID.
+      4. Formspree will send a confirmation email the first time you submit
+         a test entry — click the link in that email to activate the form.
+    -->
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+      <div class="form-row two-col">
+        <div>
+          <label for="player-name">Player Full Name</label>
+          <input type="text" id="player-name" name="player_name" required>
+        </div>
+        <div>
+          <label for="parent-name">Parent/Guardian Full Name</label>
+          <input type="text" id="parent-name" name="parent_name" required>
+        </div>
+      </div>
+
+      <div class="form-row two-col">
+        <div>
+          <label for="player-email">Player Email</label>
+          <input type="email" id="player-email" name="player_email">
+        </div>
+        <div>
+          <label for="parent-email">Parent Email</label>
+          <input type="email" id="parent-email" name="parent_email" required>
+        </div>
+      </div>
+
+      <div class="form-row two-col">
+        <div>
+          <label for="player-phone">Player Phone Number</label>
+          <input type="tel" id="player-phone" name="player_phone">
+        </div>
+        <div>
+          <label for="parent-phone">Parent Phone Number</label>
+          <input type="tel" id="parent-phone" name="parent_phone" required>
+        </div>
+      </div>
+
+      <div class="form-row two-col">
+        <div>
+          <label for="player-instagram">Player Instagram</label>
+          <input type="text" id="player-instagram" name="player_instagram" placeholder="@username">
+        </div>
+        <div>
+          <label for="jersey-size">Jersey Size</label>
+          <select id="jersey-size" name="jersey_size" required>
+            <option value="">Select size&hellip;</option>
+            <option>Youth Small</option>
+            <option>Youth Medium</option>
+            <option>Youth Large</option>
+            <option>Adult Small</option>
+            <option>Adult Medium</option>
+            <option>Adult Large</option>
+            <option>Adult X-Large</option>
+            <option>Adult XX-Large</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row two-col">
+        <div>
+          <label for="school">Current School</label>
+          <input type="text" id="school" name="current_school" required>
+        </div>
+        <div>
+          <label for="grade">Grade</label>
+          <select id="grade" name="grade_level" required>
+            <option value="">Select grade&hellip;</option>
+            <option>3rd Grade</option>
+            <option>4th Grade</option>
+            <option>5th Grade</option>
+            <option>6th Grade</option>
+            <option>7th Grade</option>
+            <option>8th Grade</option>
+            <option>9th Grade</option>
+            <option>10th Grade</option>
+            <option>11th Grade</option>
+            <option>12th Grade</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label for="program">Registering For</label>
+        <select id="program" name="program" required>
+          <option value="">Select one&hellip;</option>
+          <option value="october-camp">October Skills Camp</option>
+          <option value="6th-tryout">6th Grade Tryouts</option>
+          <option value="7th-tryout">7th Grade Tryouts</option>
+          <option value="8th-tryout">8th Grade Tryouts</option>
+          <option value="9th-tryout">9th Grade Tryouts</option>
+          <option value="10th-tryout">10th Grade Tryouts</option>
+          <option value="11th-tryout">11th Grade Tryouts</option>
+          <option value="1-on-1">1-on-1 Training</option>
+          <option value="not-sure">Not Sure Yet</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="referral">How Did You Hear About Us?</label>
+        <select id="referral" name="referral_source" required>
+          <option value="">Select one&hellip;</option>
+          <option>Friend / Family Referral</option>
+          <option>School</option>
+          <option>Instagram / Social Media</option>
+          <option>Local Event or Tournament</option>
+          <option>Flyer</option>
+          <option>Another AAU Program</option>
+          <option>Google Search</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="notes">Additional Notes</label>
+        <textarea id="notes" name="notes" placeholder="Any questions, scheduling conflicts, or details we should know?"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary" style="width:100%;">Submit Registration</button>
+      <p class="form-note">By submitting, you'll be contacted by the Ironhouse Hoops team regarding next steps, including any registration fees.</p>
+    </form>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="images/logo.png" alt="Ironhouse Hoops" class="footer-logo">
+      <h3 class="footer-heading">Connect With Us</h3>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/ironhousehoops/" title="Instagram" target="_blank" rel="noopener">IG</a>
+        <a href="#" title="Facebook">FB</a>
+        <a href="#" title="X / Twitter">X</a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h3 class="footer-heading">Information</h3>
+      <div class="footer-links-cols">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="schedule.html">Upcoming Events</a></li>
+          <li><a href="about.html">About/Team</a></li>
+          <li><a href="index.html#tryouts">Tryouts</a></li>
+        </ul>
+        <ul>
+          <li><a href="registration.html?program=october-camp">Skills Camp</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="registration.html">Register</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-join">
+      <h3 class="footer-heading">Join Ironhouse Hoops</h3>
+      <p>If you're interested in joining as a player, coach, or sponsor, we'd love to hear from you.</p>
+      <a href="contact.html" class="btn-pill">Contact Us</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p><strong>Ironhouse Hoops</strong> &mdash; Minneapolis, Minnesota &nbsp;|&nbsp; [phone number] &nbsp;|&nbsp; info@ironhousehoops.com</p>
+    <p>&copy; <span id="year"></span> Ironhouse Hoops. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/main.js?v=5"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const program = params.get("program");
+  if (program) {
+    const select = document.getElementById("program");
+    if (select && select.querySelector('option[value="' + program + '"]')) {
+      select.value = program;
+    }
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About &amp; Teams | Ironhouse Hoops</title>
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="apple-touch-icon" href="images/favicon-180.png">
+<link rel="stylesheet" href="css/style.css?v=5">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <img src="images/logo.png" alt="Ironhouse Hoops" class="brand-logo">
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="schedule.html">Upcoming Events</a></li>
+      <li><a href="about.html" class="active">About/Team</a></li>
+      <li><a href="index.html#tryouts">Tryouts</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="registration.html" class="cta">Register</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" style="padding: 60px 20px;">
+  <div class="container">
+    <h1>About Ironhouse Hoops</h1>
+    <p>Our mission is to develop skilled, disciplined, and confident basketball players through high-level training, competition, and mentorship. At Ironhouse Hoops, we believe iron sharpens iron&mdash;building athletes who are prepared to compete at the next level and lead beyond the court.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Coaching Team</h2>
+    <p class="section-subtitle">Meet the coaches leading our teams and training programs.</p>
+    <div class="grid">
+      <div class="card person-card">
+        <div class="person-photo"><img src="images/waylon-buggs.png" alt="Waylon Buggs"></div>
+        <h3>Waylon Buggs</h3>
+        <p class="person-title">President</p>
+        <p>Brings 15+ years of coaching experience to Ironhouse Hoops, focused on building fundamentals, basketball IQ, and character in every player he coaches.</p>
+      </div>
+      <div class="card person-card">
+        <div class="person-photo"><img src="images/bryson-buggs.png" alt="Bryson Buggs" style="object-position: 50% 10%;"></div>
+        <h3>Bryson Buggs</h3>
+        <p class="person-title">Vice President</p>
+        <p>An All-Conference player himself, Bryson co-founded Ironhouse Hoops to give the next generation the same competitive training and mentorship that shaped his own game.</p>
+      </div>
+      <div class="card person-card">
+        <div class="person-photo">➕</div>
+        <h3>Join Our Team</h3>
+        <p>We're always looking for passionate coaches to join Ironhouse Hoops. <a href="contact.html" style="color: var(--color-primary-dark); text-decoration: underline;">Reach out</a> if you're interested.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container" style="text-align:center;">
+    <h2 class="section-title">Ready to Join Ironhouse Hoops?</h2>
+    <p class="section-subtitle">Click here to register for a team, camp, or 1-on-1 training session.</p>
+    <a href="registration.html" class="btn btn-primary">Register Now</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="images/logo.png" alt="Ironhouse Hoops" class="footer-logo">
+      <h3 class="footer-heading">Connect With Us</h3>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/ironhousehoops/" title="Instagram" target="_blank" rel="noopener">IG</a>
+        <a href="#" title="Facebook">FB</a>
+        <a href="#" title="X / Twitter">X</a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h3 class="footer-heading">Information</h3>
+      <div class="footer-links-cols">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="schedule.html">Upcoming Events</a></li>
+          <li><a href="about.html">About/Team</a></li>
+          <li><a href="index.html#tryouts">Tryouts</a></li>
+        </ul>
+        <ul>
+          <li><a href="registration.html?program=october-camp">Skills Camp</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="registration.html">Register</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-join">
+      <h3 class="footer-heading">Join Ironhouse Hoops</h3>
+      <p>If you're interested in joining as a player, coach, or sponsor, we'd love to hear from you.</p>
+      <a href="contact.html" class="btn-pill">Contact Us</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p><strong>Ironhouse Hoops</strong> &mdash; Minneapolis, Minnesota &nbsp;|&nbsp; [phone number] &nbsp;|&nbsp; info@ironhousehoops.com</p>
+    <p>&copy; <span id="year"></span> Ironhouse Hoops. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/main.js?v=5"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
