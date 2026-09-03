@@ -22,7 +22,7 @@
       <li><a href="about.html">About/Team</a></li>
       <li><a href="index.html#tryouts">Tryouts</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a href="registration.html" class="cta">Register</a></li>
+      <li><a href="https://buy.stripe.com/5kQ5kEc4P1z08rWcrn9fW00" class="cta">Register</a></li>
     </ul>
   </nav>
 </header>
@@ -30,87 +30,28 @@
 <section class="hero" style="padding: 60px 20px;">
   <div class="container">
     <h1>Request a Training Session</h1>
-    <p>Fill out the form below and we'll follow up to confirm your day and time.</p>
+    <p>1-on-1 training sign-ups aren't open yet &mdash; we're still building out our trainer roster and schedule. Register for our October Skills Camp below in the meantime.</p>
   </div>
 </section>
 
 <section class="section">
-  <div class="container">
-
-    <!-- Uses Formspree — see registration.html for setup steps. -->
-    <form action="https://formspree.io/f/xaeyeqbo" method="POST">
-
-      <div class="form-row two-col">
-        <div>
-          <label for="t-player-name">Player Name</label>
-          <input type="text" id="t-player-name" name="player_name" required>
-        </div>
-        <div>
-          <label for="t-parent-name">Parent/Guardian Name</label>
-          <input type="text" id="t-parent-name" name="parent_name" required>
-        </div>
-      </div>
-
-      <div class="form-row two-col">
-        <div>
-          <label for="t-trainer">Preferred Trainer</label>
-          <select id="t-trainer" name="preferred_trainer" required>
-            <option value="">Select one&hellip;</option>
-            <option value="no-preference">No Preference</option>
-            <option value="trainer-1">[Trainer Name 1]</option>
-            <option value="trainer-2">[Trainer Name 2]</option>
-          </select>
-        </div>
-        <div>
-          <label for="t-position">Position</label>
-          <select id="t-position" name="position" required>
-            <option value="">Select one&hellip;</option>
-            <option>Guard</option>
-            <option>Forward</option>
-            <option>Center</option>
-            <option>Multiple / Not Sure</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="form-row two-col">
-        <div>
-          <label for="t-skill-level">Skill Level</label>
-          <select id="t-skill-level" name="skill_level" required>
-            <option value="">Select one&hellip;</option>
-            <option>Beginner</option>
-            <option>Intermediate</option>
-            <option>Advanced</option>
-          </select>
-        </div>
-        <div>
-          <label for="t-contact">Email or Phone</label>
-          <input type="text" id="t-contact" name="contact_info" required>
-        </div>
-      </div>
-
-      <div class="form-row two-col">
-        <div>
-          <label for="t-date">Preferred Date</label>
-          <input type="date" id="t-date" name="preferred_date" required>
-        </div>
-        <div>
-          <label for="t-time">Preferred Time</label>
-          <input type="time" id="t-time" name="preferred_time" required>
-        </div>
-      </div>
-
-      <div class="form-row">
-        <label for="t-notes">Additional Notes</label>
-        <textarea id="t-notes" name="notes" placeholder="Anything else we should know?"></textarea>
-      </div>
-
-      <button type="submit" class="btn btn-primary" style="width:100%;">Request Training Session</button>
-      <p class="form-note">This is a request, not a confirmed booking &mdash; the Ironhouse Hoops team will follow up to lock in your session.</p>
-    </form>
-
+  <div class="container" style="text-align:center;">
+    <div class="card" style="max-width:560px; margin:0 auto; padding:40px;">
+      <h2 class="section-title">Skills Camp Registration Is Open</h2>
+      <p class="section-subtitle">Saturday, October 10, 2026 &mdash; Brooklyn Park Community Center. This is the only registration open right now; we'll announce 1-on-1 training sign-ups separately once our trainer roster is set.</p>
+      <a href="https://buy.stripe.com/5kQ5kEc4P1z08rWcrn9fW00" class="btn btn-primary btn-large">Register for Skills Camp</a>
+      <p class="form-note" style="margin-top:20px;">Questions in the meantime? <a href="contact.html">Contact us</a>.</p>
+    </div>
   </div>
 </section>
+
+<!--
+  This page previously hosted a Formspree 1-on-1 training request form.
+  It's been replaced with a Skills Camp redirect because the trainer roster
+  and schedule aren't finalized yet — re-enable the form (see git history)
+  once training sign-ups are ready to open.
+-->
+
 
 <footer class="site-footer">
   <div class="container footer-grid">
@@ -136,7 +77,7 @@
         <ul>
           <li><a href="https://buy.stripe.com/5kQ5kEc4P1z08rWcrn9fW00">Skills Camp</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="registration.html">Register</a></li>
+          <li><a href="https://buy.stripe.com/5kQ5kEc4P1z08rWcrn9fW00">Register</a></li>
         </ul>
       </div>
     </div>
@@ -156,15 +97,5 @@
 
 <script src="js/main.js?v=5"></script>
 <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
-<script>
-  const params = new URLSearchParams(window.location.search);
-  const trainer = params.get("trainer");
-  if (trainer) {
-    const select = document.getElementById("t-trainer");
-    if (select && select.querySelector('option[value="' + trainer + '"]')) {
-      select.value = trainer;
-    }
-  }
-</script>
 </body>
 </html>
