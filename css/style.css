@@ -148,7 +148,7 @@ a { color: inherit; text-decoration: none; }
     linear-gradient(rgba(11,12,14,0.18), rgba(11,12,14,0.50)),
     url("../images/camp-group-photo.jpg");
   background-size: cover;
-  background-position: center 90%;
+  background-position: center 78%;
   padding: 120px 20px;
 }
 
