@@ -145,11 +145,16 @@ a { color: inherit; text-decoration: none; }
 
 .hero-photo {
   background-image:
-    linear-gradient(rgba(11,12,14,0.58), rgba(11,12,14,0.72)),
+    linear-gradient(rgba(11,12,14,0.18), rgba(11,12,14,0.50)),
     url("../images/camp-group-photo.jpg");
   background-size: cover;
-  background-position: center 62%;
+  background-position: center 90%;
   padding: 120px 20px;
+}
+
+.hero-photo h1,
+.hero-photo p {
+  text-shadow: 0 2px 14px rgba(0,0,0,0.75), 0 0 3px rgba(0,0,0,0.6);
 }
 
 .hero h1 {
