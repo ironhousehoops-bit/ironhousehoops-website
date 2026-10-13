@@ -28,7 +28,7 @@
 </header>
 
 <section class="hero hero-photo hero-video">
-  <video class="hero-bg-video" muted loop playsinline preload="metadata" poster="images/camp-group-photo.jpg" data-src="video/camp-recap-2.mp4" aria-hidden="true"></video>
+  <video class="hero-bg-video" muted loop playsinline preload="metadata" poster="images/camp-group-photo.jpg" data-src="video/camp-recap-2.mp4" data-src-mobile="video/camp-recap-mobile.mp4" aria-hidden="true"></video>
   <div class="container">
     <h1>Where Iron Sharpens Iron.</h1>
     <p>Ironhouse Hoops is an AAU basketball organization with teams across every age group, skills camps, and 1-on-1 training built to develop players on and off the court.</p>
@@ -116,9 +116,9 @@
   var small = window.matchMedia("(max-width: 700px)").matches;
   var calm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var saver = navigator.connection && navigator.connection.saveData;
-  if (small || calm || saver) return;
+  if (calm || saver) return;
   v.muted = true;
-  v.src = v.getAttribute("data-src");
+  v.src = v.getAttribute(small ? "data-src-mobile" : "data-src");
   var p = v.play();
   if (p && p.catch) p.catch(function () {});
 })();
