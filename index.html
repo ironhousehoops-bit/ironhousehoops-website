@@ -7,7 +7,7 @@
 <meta name="description" content="Ironhouse Hoops is an AAU basketball organization offering teams across age groups, training camps, and 1-on-1 skills training.">
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
 <link rel="apple-touch-icon" href="images/favicon-180.png">
-<link rel="stylesheet" href="css/style.css?v=9">
+<link rel="stylesheet" href="css/style.css?v=10">
 </head>
 <body>
 
@@ -27,7 +27,8 @@
   </nav>
 </header>
 
-<section class="hero hero-photo">
+<section class="hero hero-photo hero-video">
+  <video class="hero-bg-video" muted loop playsinline preload="metadata" poster="images/camp-group-photo.jpg" data-src="video/camp-recap.mp4" aria-hidden="true"></video>
   <div class="container">
     <h1>Where Iron Sharpens Iron.</h1>
     <p>Ironhouse Hoops is an AAU basketball organization with teams across every age group, skills camps, and 1-on-1 training built to develop players on and off the court.</p>
@@ -108,6 +109,20 @@
 </footer>
 
 <script src="js/main.js?v=5"></script>
+<script>
+(function () {
+  var v = document.querySelector(".hero-bg-video");
+  if (!v) return;
+  var small = window.matchMedia("(max-width: 700px)").matches;
+  var calm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var saver = navigator.connection && navigator.connection.saveData;
+  if (small || calm || saver) return;
+  v.muted = true;
+  v.src = v.getAttribute("data-src");
+  var p = v.play();
+  if (p && p.catch) p.catch(function () {});
+})();
+</script>
 <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
