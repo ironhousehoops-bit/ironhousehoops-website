@@ -17,7 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
   var selector = ".section .section-title, .section .section-subtitle, .section .card, " +
-    ".section .split-photo, .section .split-text, .section .photo-strip a, .section .table-wrap, .banner-img";
+    ".section .split-photo, .section .split-text, .section .photo-strip a, .section .table-wrap, .banner-img, " +
+    ".section .day-card, .section .tl-item, .section .event-graphic, .section .photo-band, .section .fact-row";
   var els = [].slice.call(document.querySelectorAll(selector));
   if (!els.length) return;
 
