@@ -7,7 +7,7 @@
 <meta name="description" content="Ironhouse Hoops is an AAU basketball organization offering teams across age groups, training camps, and 1-on-1 skills training.">
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
 <link rel="apple-touch-icon" href="images/favicon-180.png">
-<link rel="stylesheet" href="css/style.css?v=11">
+<link rel="stylesheet" href="css/style.css?v=18">
 </head>
 <body>
 
@@ -38,31 +38,77 @@
   </div>
 </section>
 
+<section class="section">
+  <div class="container split">
+    <div class="split-photo">
+      <img src="images/camp/camp-group.jpg" alt="Players and coaches at the Ironhouse Hoops Skills Camp" width="1179" height="786" loading="lazy">
+    </div>
+    <div class="split-text">
+      <h2 class="section-title">Skills Camp 2026</h2>
+      <p class="section-subtitle">Where it started.</p>
+      <p>In October, 73 players from across the area came to Brooklyn Park Community Center for our first Skills Camp: skills work, drills, and 5-on-5 games with coaches teaching along the way.</p>
+      <p>Now we're building our 2027 teams. Tryouts are January 2&ndash;3.</p>
+      <a href="#tryouts" class="btn btn-primary">See Tryout Times</a>
+    </div>
+  </div>
+</section>
+
 <section id="tryouts" class="section section-alt">
   <div class="container">
     <h2 class="section-title">Age Group Tryouts</h2>
     <p class="section-subtitle">Tryouts are Saturday, January 2 and Sunday, January 3 at Brooklyn Park Community Center. Choose your age group to see your time and register.</p>
     <div class="grade-grid">
-      <a href="tryout-13u.html" class="card tryout-card">
+      <a href="tryout-13u.html" class="card tryout-card photo-card" style="background-image: linear-gradient(rgba(11,12,14,0.10), rgba(11,12,14,0.78)), url('images/camp/camp-dribble-move.jpg');">
         <h3>13u</h3>
         <p>Sat Jan 2 &middot; 4:30 PM</p>
       </a>
-      <a href="tryout-14u.html" class="card tryout-card">
+      <a href="tryout-14u.html" class="card tryout-card photo-card" style="background-image: linear-gradient(rgba(11,12,14,0.10), rgba(11,12,14,0.78)), url('images/camp/camp-dribble-low.jpg');">
         <h3>14u</h3>
         <p>Sat Jan 2 &middot; 5:45 PM</p>
       </a>
-      <a href="tryout-15u.html" class="card tryout-card">
+      <a href="tryout-15u.html" class="card tryout-card photo-card" style="background-image: linear-gradient(rgba(11,12,14,0.10), rgba(11,12,14,0.78)), url('images/camp/camp-dribble-front.jpg');">
         <h3>15u</h3>
         <p>Sat Jan 2 &middot; 7:00 PM</p>
       </a>
-      <a href="tryout-16u.html" class="card tryout-card">
+      <a href="tryout-16u.html" class="card tryout-card photo-card" style="background-image: linear-gradient(rgba(11,12,14,0.10), rgba(11,12,14,0.78)), url('images/camp/camp-layup.jpg');">
         <h3>16u</h3>
         <p>Sun Jan 3 &middot; 4:30 PM</p>
       </a>
-      <a href="tryout-17u.html" class="card tryout-card">
+      <a href="tryout-17u.html" class="card tryout-card photo-card" style="background-image: linear-gradient(rgba(11,12,14,0.10), rgba(11,12,14,0.78)), url('images/camp/camp-dunk.jpg');">
         <h3>17u</h3>
         <p>Sun Jan 3 &middot; 5:45 PM</p>
       </a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">What Families Are Saying</h2>
+    <p class="section-subtitle">Feedback from parents after our first Skills Camp.</p>
+
+    <div class="review-grid">
+      <div class="card review-card">
+        <p>&ldquo;The coaches really took the time to work with each player. It wasn&rsquo;t just about running drills, they were actually teaching the game and helping the kids understand what they were doing. Great environment for young athletes.&rdquo;</p>
+        <p class="reviewer">&mdash; Skills Camp Parent</p>
+      </div>
+      <div class="card review-card">
+        <p>&ldquo;What stood out to me was how organized everything was. The communication leading up to camp was great, and you could tell the coaches genuinely cared about helping the players get better.&rdquo;</p>
+        <p class="reviewer">&mdash; Skills Camp Parent</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Follow @ironhousehoops</h2>
+    <p class="section-subtitle">More photos and video from camp on Instagram.</p>
+    <div class="photo-strip">
+      <a href="https://www.instagram.com/ironhousehoops/" target="_blank" rel="noopener"><img src="images/camp/camp-hoop-contest.jpg" alt="Two players going up for a shot at camp" loading="lazy"></a>
+      <a href="https://www.instagram.com/ironhousehoops/" target="_blank" rel="noopener"><img src="images/camp/camp-layup-defense.jpg" alt="A player finishing at the rim with a defender on him" loading="lazy"></a>
+      <a href="https://www.instagram.com/ironhousehoops/" target="_blank" rel="noopener"><img src="images/camp/camp-defense.jpg" alt="Two players competing in a defensive drill" loading="lazy"></a>
+      <a href="https://www.instagram.com/ironhousehoops/" target="_blank" rel="noopener"><img src="images/camp/camp-dribble-side.jpg" alt="A player dribbling two balls during a drill" loading="lazy"></a>
     </div>
   </div>
 </section>
@@ -108,7 +154,15 @@
   </div>
 </footer>
 
-<script src="js/main.js?v=5"></script>
+<div class="tryout-popup" id="tryout-popup" role="dialog" aria-modal="true" aria-label="Ironhouse Hoops tryouts, January 2 and 3" hidden>
+  <div class="tryout-popup-box">
+    <button type="button" class="tryout-popup-close" aria-label="Close">&times;</button>
+    <a href="#tryouts" class="tryout-popup-link"><img src="images/tryouts-popup.jpg?v=2" alt="Ironhouse Hoops tryouts, January 2 and 3, 2027 at Brooklyn Park Community Center"></a>
+    <a href="#tryouts" class="btn btn-primary tryout-popup-link">Choose Your Age Group</a>
+  </div>
+</div>
+
+<script src="js/main.js?v=6"></script>
 <script>
 (function () {
   var v = document.querySelector(".hero-bg-video");
@@ -124,5 +178,40 @@
 })();
 </script>
 <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+
+<script>
+(function () {
+  var box = document.getElementById("tryout-popup");
+  if (!box) return;
+  var seen = false;
+  try { seen = sessionStorage.getItem("ih_tryout_popup") === "1"; } catch (e) {}
+  if (seen) return;
+
+  function close() {
+    box.classList.remove("show");
+    setTimeout(function () { box.hidden = true; }, 300);
+    try { sessionStorage.setItem("ih_tryout_popup", "1"); } catch (e) {}
+    document.removeEventListener("keydown", onKey);
+  }
+  function onKey(e) { if (e.key === "Escape") close(); }
+
+  // Only show if the graphic actually loads, so a missing file never shows an empty pop-up.
+  var test = new Image();
+  test.onload = function () {
+    setTimeout(function () {
+      box.hidden = false;
+      requestAnimationFrame(function () { box.classList.add("show"); });
+      var btn = box.querySelector(".tryout-popup-close");
+      if (btn) btn.focus();
+      document.addEventListener("keydown", onKey);
+    }, 1200);
+  };
+  test.src = box.querySelector("img").getAttribute("src");
+
+  box.querySelector(".tryout-popup-close").addEventListener("click", close);
+  box.addEventListener("click", function (e) { if (e.target === box) close(); });
+  [].forEach.call(box.querySelectorAll(".tryout-popup-link"), function (a) { a.addEventListener("click", close); });
+})();
+</script>
 </body>
 </html>
