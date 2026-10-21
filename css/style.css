@@ -1019,3 +1019,20 @@ textarea { resize: vertical; min-height: 110px; }
 @media (prefers-reduced-motion: reduce) {
   .tryout-popup, .tryout-popup-box { transition: none; }
 }
+
+/* Age-group card photos (kept in CSS so the host cannot rewrite them) */
+.photo-card.photo-13u {
+  background-image: linear-gradient(rgba(11,12,14,0.10), rgba(11,12,14,0.78)), url("../images/camp/camp-dribble-move.jpg");
+}
+.photo-card.photo-14u {
+  background-image: linear-gradient(rgba(11,12,14,0.10), rgba(11,12,14,0.78)), url("../images/camp/camp-dribble-low.jpg");
+}
+.photo-card.photo-15u {
+  background-image: linear-gradient(rgba(11,12,14,0.10), rgba(11,12,14,0.78)), url("../images/camp/camp-dribble-front.jpg");
+}
+.photo-card.photo-16u {
+  background-image: linear-gradient(rgba(11,12,14,0.10), rgba(11,12,14,0.78)), url("../images/camp/camp-layup.jpg");
+}
+.photo-card.photo-17u {
+  background-image: linear-gradient(rgba(11,12,14,0.10), rgba(11,12,14,0.78)), url("../images/camp/camp-dunk.jpg");
+}
